@@ -4,6 +4,29 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
 	<title>庞大教育首页</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var tab_title = $(".tab_title ul").find("li");
+		var tab_content = $(".tab_content").find("ul");
+		Tabchange(tab_title,tab_content);
+		var menu_title = $(".menu_title").find("li");
+		var menu_content = $(".menu_content").find("li");
+		Tabchange(menu_title,menu_content);
+	});
+	//选项卡切换
+	function Tabchange(menu,content)
+	{
+		menu.each(function(i){
+			menu.eq(i).hover(function(){
+				menu.removeClass("hover");
+				menu.eq(i).addClass("hover");
+				content.hide();
+				content.eq(i).show();
+			});
+		});
+	}
+	</script>
 </head>
 <body>
 	<!-- 头部开始 -->
@@ -94,7 +117,7 @@
 	
 	<!-- box_1开始 -->
 	<div class="box_1 fixed">
-		<div class="order">
+		<div class="order fixed">
 			<dl>
 				<dt>奔驰订单班</dt>
 				<dd>
@@ -124,16 +147,141 @@
 				</dd>
 			</dl>
 		</div>
-		<div class="news"></div>
-		<div class="map"></div>
-		<div class="contact"></div>
-		<div class="star"></div>
+		<div class="box_1_1">
+		<div class="news fixed">
+		<dl>
+			<dt></dt>
+			<dd class="tab_title fixed">
+			<ul>
+				<li class="hover"><a href="#">学校新闻</a></li>
+				<li><a href="#">就业喜报</a></li>
+				<li><a href="#">媒体报道</a></li>
+			</ul>
+			</dd>
+			<dd class="tab_content fixed">
+				<ul>
+					<li><span class="title"><a href="#">[学校新闻]企业招聘进校园 山东万通学子倍受青睐</a></span><span class="date">2013-03-14</span></li>
+					<li><span class="title"><a href="#">[学校新闻]万通学子废物利用 创意思维装扮宿舍</a></span><span class="date">2013-03-14</span></li>
+					<li><span class="title"><a href="#">[学校新闻]2013留下春天的足迹 山东万通校园植树火热进行中</a></span><span class="date">2013-03-14</span></li>
+					<li><span class="title"><a href="#">[学校新闻]新生访谈：汽修精英万通深造 奠定坚实创业基础</a></span><span class="date">2013-03-14</span></li>
+					<li><span class="title"><a href="#">[学校新闻]关注新生：万通班主任 让爱一路同行</a></span><span class="date">2013-03-14</span></li>
+					<li><span class="title"><a href="#">[学校新闻]荣城华泰汽车有限公司走进山东万通参观考察</a></span><span class="date">2013-03-14</span></li>
+				</ul>
+				<ul style="display:none">
+					<li><span class="title"><a href="#">[就业喜报]企业招聘进校园 山东万通学子倍受青睐</a></span><span class="date">2013-03-14</span></li>
+					<li><span class="title"><a href="#">[就业喜报]万通学子废物利用 创意思维装扮宿舍</a></span><span class="date">2013-03-14</span></li>
+					<li><span class="title"><a href="#">[就业喜报]2013留下春天的足迹 山东万通校园植树火热进行中</a></span><span class="date">2013-03-14</span></li>
+					<li><span class="title"><a href="#">[就业喜报]新生访谈：汽修精英万通深造 奠定坚实创业基础</a></span><span class="date">2013-03-14</span></li>
+					<li><span class="title"><a href="#">[就业喜报]关注新生：万通班主任 让爱一路同行</a></span><span class="date">2013-03-14</span></li>
+					<li><span class="title"><a href="#">[就业喜报]荣城华泰汽车有限公司走进山东万通参观考察</a></span><span class="date">2013-03-14</span></li>
+				</ul>
+				<ul style="display:none">
+					<li><span class="title"><a href="#">[媒体报道]企业招聘进校园 山东万通学子倍受青睐</a></span><span class="date">2013-03-14</span></li>
+					<li><span class="title"><a href="#">[媒体报道]万通学子废物利用 创意思维装扮宿舍</a></span><span class="date">2013-03-14</span></li>
+					<li><span class="title"><a href="#">[媒体报道]2013留下春天的足迹 山东万通校园植树火热进行中</a></span><span class="date">2013-03-14</span></li>
+					<li><span class="title"><a href="#">[媒体报道]新生访谈：汽修精英万通深造 奠定坚实创业基础</a></span><span class="date">2013-03-14</span></li>
+					<li><span class="title"><a href="#">[媒体报道]关注新生：万通班主任 让爱一路同行</a></span><span class="date">2013-03-14</span></li>
+					<li><span class="title"><a href="#">[媒体报道]荣城华泰汽车有限公司走进山东万通参观考察</a></span><span class="date">2013-03-14</span></li>
+				</ul>
+			</dd>
+		</dl>
+		</div>
+		<div class="map fixed">
+		<dl>
+			<dt></dt>
+			<dd class="map_content">
+			<img src="images/img_map.jpg" alt="" />
+			</dd>
+		</dl>
+		</div>
+		</div>
+		<div class="box_1_2">
+		<div class="contact fixed">
+		<dl>
+			<dt class="title"></dt>
+			<dd><img src="images/img_tel.jpg" alt="" /></dd>
+			<dd><img src="images/img_address.jpg" alt="" /></dd>
+		</dl>
+		</div>
+		<div class="star">
+		<dl>
+			<dt></dt>
+			<dd>
+				<ul>
+					<li><a href="#">恭喜4S应用专业 李某某 成功就业</a></li>
+					<li><a href="#">恭喜4S应用专业 李某某 成功就业</a></li>
+					<li><a href="#">恭喜4S应用专业 李某某 成功就业</a></li>
+					<li><a href="#">恭喜4S应用专业 李某某 成功就业</a></li>
+				</ul>
+			</dd>
+		</dl>
+		</div>
+		</div>
 	</div>
 	<!-- box_1结束 -->
 	
 	<!-- box_2开始 -->
-	<div class="box_2 fixed"></div>
+	<div class="box_2 fixed">
+	<div class="box_2_1">
+	<dl>
+		<dt class="fixed"><span class="title diamond">关于我们</span><a href="#" class="more">更多&gt;&gt;</a></dt>
+		<dd>
+		<p><img src="images/img_about_index.jpg" alt="" /></p>
+		<p><a href="#" class="title">庞大中锐汽车学院</a></p>
+<p class="content">庞大中锐汽车学院是庞大汽贸集团与中锐教育集团携手打造的国际化、现代化、企业化的汽车服务人才培养基地，实施订单招生、定向培养、定岗就业，为庞大汽贸集团等国内大型汽车经销商集团...</p>
+		</dd>
+	</dl>
+	</div>
+	<div class="box_2_2">
+	<dl>
+		<dt class="fixed"><span class="title diamond">精彩图片</span><a href="#" class="more">更多&gt;&gt;</a></dt>
+		<dd class="content">
+			<ul class="menu_title">
+				<li class="hover"><a href="#">学习环境</a></li>
+				<li><a href="#">生活环境</a></li>
+				<li><a href="#">校园活动</a></li>
+				<li style="border-bottom:0px"><a href="#">实训设备</a></li>
+			</ul>
+			<ul class="menu_content">
+				<li><a href="#"><img src="images/img_jctp.jpg" alt="" title="1"/></a></li>
+				<li style="display:none"><a href="#"><img src="images/img_jctp.jpg" alt="" title="2" /></a></li>
+				<li style="display:none"><a href="#"><img src="images/img_jctp.jpg" alt="" title="3" /></a></li>
+				<li style="display:none"><a href="#"><img src="images/img_jctp.jpg" alt="" title="4" /></a></li>
+			</ul>
+		</dd>
+	</dl>
+	</div>
+	<div class="box_2_3">
+	<dl>
+		<dt class="fixed"><span class="title diamond">商学院视频</span><a href="#" class="more">更多&gt;&gt;</a></dt>
+		<dd class="video">
+		<embed src="http://player.youku.com/player.php/sid/XMjY5NjAzNTQ0/v.swf" allowFullScreen="true" quality="high" width="240" height="164" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+		</dd>
+		<dd class="title">
+			<ul>
+				<li><a href="#">选择庞锐让梦想飞</a></li>
+				<li><a href="#">学好技能 争做...</a></li>
+				<li><a href="#">阚有波大师巡讲...</a></li>
+				<li><a href="#">2013春季“点亮...</a></li>
+			</ul>
+		</dd>
+	</dl>
+	</div>
+	
+	</div>
 	<!-- box_2结束 -->
+	
+	<!-- qqbox 开始 -->
+	<div class="qqbox">
+	<ul>
+		<li>庞锐商学院学费 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=593224651&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:593224651:41" alt="点击这里给我发消息" title="点击这里给我发消息"></a></li>
+		<li>庞锐商学院课程 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=593224651&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:593224651:41" alt="点击这里给我发消息" title="点击这里给我发消息"></a></li>
+		<li>庞锐商学院就业 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=593224651&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:593224651:41" alt="点击这里给我发消息" title="点击这里给我发消息"></a></li>
+		<li>庞锐商学院师资 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=593224651&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:593224651:41" alt="点击这里给我发消息" title="点击这里给我发消息"></a></li>
+		<li>庞锐商学院认证 <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=593224651&site=qq&menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:593224651:41" alt="点击这里给我发消息" title="点击这里给我发消息"></a></li>
+	</ul>
+	</div>
+	<!-- qqbox 结束 -->
 	
 	<!-- box_3开始 -->
 	<div class="box_3 fixed"></div>
