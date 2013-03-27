@@ -101,8 +101,8 @@
 .box_4 ul.school_view li div.title a{width:100%;display:block;text-align:center;height:24px;line-height:24px}
 .box_4 dl.partners{margin-top:10px;margin-left:10px}
 .box_4 dl.partners dt span.title{padding-left:20px}
-.box_4 dl.partners dd ul li{float:left;margin-right:4px}
-.box_4 dl.partners dd ul li{width:100%;display:block;}
+.box_4 dl.partners dd ul li{float:left;margin-right:4px;width:118px;height:56px;}
+.box_4 dl.partners dd ul li a{width:100%;display:block}
 .box_4 dl.partners dd ul li img{width:118px;height:56px;}
 
 .box_4 ul.footmenu{width:100%;float:left;margin-top:8px}

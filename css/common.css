@@ -24,7 +24,7 @@
 .leftbox div.major dl dd ul{width:300px;display:block}
 .leftbox div.major dl dd ul li{width:100%;height:30px;line-height:30px;}
 .leftbox div.major dl dd ul li span.sp_txt{float:left;}
-.leftbox div.major dl dd ul li a{float:right;color:#3164B3}
+.leftbox div.major dl dd ul li a{float:right;}
 
 .leftbox  dl.taught dt{height:28px;background:url(../images/bg_leftmenu_zhuanye-04.jpg) 4px top no-repeat}
 .leftbox  dl.taught dd{margin-left:4px}
@@ -33,6 +33,8 @@
 
 /* rightbox 开始 */
 .rightbox{width:757px;margin-left:10px;float:left}
+.rightbox .location{width:100%;height:24px;line-height:24px;border-bottom:2px solid #A1D7F4;margin-bottom:10px}
+.rightbox .location a{color:#C20106}
 .rightbox table.title_list{width:100%;border-collapse:collspse;}
 .rightbox table.title_list tr.thead{background-color:#DEDEDE;font-size:14px}
 .rightbox table.title_list tr.thead td{height:28px;line-height:28px;}
@@ -40,6 +42,14 @@
 .rightbox table.title_list ul li a{width:100%;display:block;}
 .rightbox table.title_list ul li span.sp_title{width:80%;float:left;text-indent:1em;}
 .rightbox table.title_list ul li span.sp_date{width:20%;float:right;text-align:center}
+
+.rightbox h1.title{border-bottom: 1px solid #E5E5E5;color:#0268CC;font: 800 26px/30px "宋体",arial;margin-bottom: 6px;padding: 16px 0 8px;text-align: center;}
+.rightbox h1.title span{color: #999999;width:100%;display:block;margin-top:10px;font-size:12px;font-weight: normal;line-height: 20px;}
+.rightbox .content{width:100%;float:left;margin-top:10px;}
+.rightbox .content p{font-size:14px;line-height:24px;padding: 8px 0;text-align: justify;word-wrap: break-word;}
+.rightbox .baoming{margin-left:40px}
+.rightbox .baoming strong{color:#F00}
+.rightbox .baoming p{text-indent:4em;font-size:12px}
 /* rightbox 结束 */
 
 /* mainbox 结束 */
@@ -48,7 +58,7 @@
 .footbox{width:1000px;margin:0px auto;height:146px;background:url(../images/bg_footbox.jpg) -1px top no-repeat;}
 .footbox dl.partners{float:left;margin-top:30px;margin-left:14px}
 .footbox dl.partners dt span.title{padding-left:20px}
-.footbox dl.partners dd ul li{float:left;margin-right:4px}
+.footbox dl.partners dd ul li{float:left;width:118px;height:56px;margin-right:4px}
 .footbox dl.partners dd ul li a{width:100%;display:block;}
 .footbox dl.partners dd ul li img{width:118px;height:56px;}
 
