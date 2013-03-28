@@ -4,6 +4,25 @@
 
 /* mainbox 开始 */
 .mainbox{width:1000px;margin:0px auto;margin-top:10px}
+/* 专业设置开始 */
+.mainbox .mb_top{width:100%;height:20px;float:left;background:url(../images/bg_zysz_top.jpg) left top no-repeat;}
+.mainbox .mb_middle{width:100%;float:left;background:url(../images/bg_zysz_middle.jpg) left top repeat-y;}
+.mainbox .mb_content{width:100%;float:left;height:340px;margin-left:4px}
+.mainbox .mb_content ul li{width:490px;float:left;margin-right:10px}
+.mainbox .mb_content ul li dl{width:100%;float:left;}
+.mainbox .mb_content ul li dl dt{width:490px;height:48px;}
+.mainbox .mb_content ul li dl dt.bg_01{background:url(../images/bg_zysz_title_01.jpg) left top no-repeat}
+.mainbox .mb_content ul li dl dt.bg_02{background:url(../images/bg_zysz_title_02.jpg) left top no-repeat}
+.mainbox .mb_content ul li dl dt.bg_03{background:url(../images/bg_zysz_title_03.jpg) left top no-repeat}
+.mainbox .mb_content ul li dl dt.bg_04{background:url(../images/bg_zysz_title_04.jpg) left top no-repeat}
+.mainbox .mb_content ul li dl dt.bg_05{background:url(../images/bg_zysz_title_05.jpg) left top no-repeat}
+.mainbox .mb_content ul li dl dt.bg_06{background:url(../images/bg_zysz_title_06.jpg) left top no-repeat}
+.mainbox .mb_content ul li dl dt.bg_07{background:url(../images/bg_zysz_title_07.jpg) left top no-repeat}
+.mainbox .mb_content ul li dl dt.bg_08{background:url(../images/bg_zysz_title_08.jpg) left top no-repeat}
+.mainbox .mb_content ul li dl dd{width:450px;height:300px;margin:0px auto;}
+
+.mainbox .mb_bottom{width:100%;height:142px;float:left;background:url(../images/bg_zysz_bottom.jpg) left top no-repeat;}
+
 
 /* leftbox 开始 */
 .leftbox{width:233px;float:left;}
@@ -21,10 +40,8 @@
 .leftbox div.major h2{width:100%;height:28px;background:url(../images/bg_leftmenu_zhuanye.jpg) 4px top no-repeat;}
 .leftbox div.major dl{margin-bottom:10px;margin-left:16px}
 .leftbox div.major dl dt{font-family:"微软雅黑";font-weight:bold;font-size:14px;background:url(../images/ico_square.jpg) left center no-repeat;padding-left:20px}
-.leftbox div.major dl dd ul{width:300px;display:block}
 .leftbox div.major dl dd ul li{width:100%;height:30px;line-height:30px;}
 .leftbox div.major dl dd ul li span.sp_txt{float:left;}
-.leftbox div.major dl dd ul li a{float:right;}
 
 .leftbox  dl.taught dt{height:28px;background:url(../images/bg_leftmenu_zhuanye-04.jpg) 4px top no-repeat}
 .leftbox  dl.taught dd{margin-left:4px}
@@ -47,9 +64,19 @@
 .rightbox h1.title span{color: #999999;width:100%;display:block;margin-top:10px;font-size:12px;font-weight: normal;line-height: 20px;}
 .rightbox .content{width:100%;float:left;margin-top:10px;}
 .rightbox .content p{font-size:14px;line-height:24px;padding: 8px 0;text-align: justify;word-wrap: break-word;}
+/* 报名开始 */
 .rightbox .baoming{margin-left:40px}
 .rightbox .baoming strong{color:#F00}
 .rightbox .baoming p{text-indent:4em;font-size:12px}
+/* 下载开始 */
+.rightbox ul.downloads{width:100%;float:left;}
+.rightbox ul.downloads li{width:100%;float:left;height:80px;background:url(../images/bg_point.jpg) left bottom repeat-x;}
+.rightbox ul.downloads li.hover{background-color:#F4F5F5;}
+.rightbox ul.downloads li span.title{width:630px;padding-left:20px;height:80px;float:left;display:block}
+.rightbox ul.downloads li span.title h2{font-size:14px;}
+.rightbox ul.downloads li span.title h2{width:100%;float:left;height:40px;line-height:40px}
+.rightbox ul.downloads li span.title p{width:100%;float:left;height:18px;line-height:18px}
+.rightbox ul.downloads li span.downimg{width:100px;height:30px;float:right;display:block;padding:25px 0px}
 /* rightbox 结束 */
 
 /* mainbox 结束 */
