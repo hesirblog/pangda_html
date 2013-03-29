@@ -3,25 +3,37 @@
 /* 内页头部图片 结束 */
 
 /* mainbox 开始 */
-.mainbox{width:1000px;margin:0px auto;margin-top:10px}
+.mainbox{width:1000px;margin:0px auto;margin-top:10px;background:url("../images/bg_leftmenu_line.jpg") repeat-y scroll left center}
+.mainbox2{width:1000px;margin:0px auto;margin-top:10px;}
+.location{width:1000px;margin:8px auto;border-bottom:1px solid #DFDFDF;height:24px;line-height:24px}
+.location a{color:#C20106;}
 /* 专业设置开始 */
 .mainbox .mb_top{width:100%;height:20px;float:left;background:url(../images/bg_zysz_top.jpg) left top no-repeat;}
 .mainbox .mb_middle{width:100%;float:left;background:url(../images/bg_zysz_middle.jpg) left top repeat-y;}
-.mainbox .mb_content{width:100%;float:left;height:340px;margin-left:4px}
+.mainbox .mb_content{width:100%;float:left;height:340px;margin-left:4px;background:url(../images/bg_zysz_dashed.jpg) left bottom repeat-x;margin-bottom:10px}
 .mainbox .mb_content ul li{width:490px;float:left;margin-right:10px}
+.mainbox .mb_content ul li.shadow{background:url(../images/bg_zysz_shadow.jpg) left top repeat-y}
 .mainbox .mb_content ul li dl{width:100%;float:left;}
 .mainbox .mb_content ul li dl dt{width:490px;height:48px;}
 .mainbox .mb_content ul li dl dt.bg_01{background:url(../images/bg_zysz_title_01.jpg) left top no-repeat}
-.mainbox .mb_content ul li dl dt.bg_02{background:url(../images/bg_zysz_title_02.jpg) left top no-repeat}
+.mainbox .mb_content ul li dl dt.bg_02{background:url(../images/bg_zysz_title_02.jpg) 20px top no-repeat}
 .mainbox .mb_content ul li dl dt.bg_03{background:url(../images/bg_zysz_title_03.jpg) left top no-repeat}
-.mainbox .mb_content ul li dl dt.bg_04{background:url(../images/bg_zysz_title_04.jpg) left top no-repeat}
+.mainbox .mb_content ul li dl dt.bg_04{background:url(../images/bg_zysz_title_04.jpg) 20px top no-repeat}
 .mainbox .mb_content ul li dl dt.bg_05{background:url(../images/bg_zysz_title_05.jpg) left top no-repeat}
-.mainbox .mb_content ul li dl dt.bg_06{background:url(../images/bg_zysz_title_06.jpg) left top no-repeat}
+.mainbox .mb_content ul li dl dt.bg_06{background:url(../images/bg_zysz_title_06.jpg) 20px top no-repeat}
 .mainbox .mb_content ul li dl dt.bg_07{background:url(../images/bg_zysz_title_07.jpg) left top no-repeat}
-.mainbox .mb_content ul li dl dt.bg_08{background:url(../images/bg_zysz_title_08.jpg) left top no-repeat}
-.mainbox .mb_content ul li dl dd{width:450px;height:300px;margin:0px auto;}
+.mainbox .mb_content ul li dl dt.bg_08{background:url(../images/bg_zysz_title_08.jpg) 20px top no-repeat}
+.mainbox .mb_content ul li dl dd{width:450px;margin:0px auto;}
+.mainbox .mb_content ul li dl dd.zsdx{height:258px;overflow:hidden;}
+.mainbox .mb_content ul li dl dd.zsdx img{float:left;width:143px;height:143px;padding:3px;margin-bottom:4px;margin-right:16px;border:1px solid #DFDFDF}
+.mainbox .mb_content ul li dl dd p{line-height:24px;color:#878383}
+.mainbox .mb_content ul li dl dd.zsdx p.info_01{height:156px;color:#878383;}
+.mainbox .mb_content ul li dl dd.zsdx p.info_02{height:104px;color:#878383}
+.mainbox .mb_content ul li dl dd.qq{height:24px;line-height:24px;}
+.mainbox .mb_content ul li dl dd strong{color:#0069DB}
+.mainbox .mb_content ul li dl dd  a.ico_bm{width:74px;height:22px;margin-left:20px}
 
-.mainbox .mb_bottom{width:100%;height:142px;float:left;background:url(../images/bg_zysz_bottom.jpg) left top no-repeat;}
+.mainbox .mb_bottom{width:100%;height:146px;float:left;background:url(../images/bg_zysz_bottom.jpg) left top no-repeat;}
 
 
 /* leftbox 开始 */
@@ -77,19 +89,36 @@
 .rightbox ul.downloads li span.title h2{width:100%;float:left;height:40px;line-height:40px}
 .rightbox ul.downloads li span.title p{width:100%;float:left;height:18px;line-height:18px}
 .rightbox ul.downloads li span.downimg{width:100px;height:30px;float:right;display:block;padding:25px 0px}
+/* 校园环境开始 */
+.rightbox .img_list{width:100%;float:left;}
+.rightbox .img_list ul li{width:342px;height:280px;float:left;margin:0px 16px 16px 16px;border:1px solid #DFDFDF;}
+.rightbox .img_list ul li .photo{width:330px;height:240px;margin:6px;background-color:#DFDFE0}
+.rightbox .img_list ul li .photo a{width:100%;display:block}
+.rightbox .img_list ul li img{margin:30px 9px;width:311px;height:180px;}
+.rightbox .img_list ul li p{height:24px;line-height:24px;text-align:center}
+.rightbox .img_list ul li p span.title{color:#0093E1}
 /* rightbox 结束 */
 
+/* 人才招聘 开始 */
+.note,.job_list{width:1000px;margin:0px auto;}
+.note{height:24px;line-height:24px;font-size:14px;color:#BB0505}
+.job_list{border: 1px solid #E4E2E2;border-collapse: collapse;width: 100%;margin-bottom:10px;}
+.job_list th{font-size:14px;background-color:#F6F6F6;border: 1px solid #E4E2E2;padding:16px 0px 16px 22px;text-align: left;vertical-align: baseline;}
+.job_list th.left_title{text-align:center;padding:0px;vertical-align:middle;width:128px;}
+.job_list td{background-color:#FFFFFF;border: 1px solid #E4E2E2;padding:16px 0px 16px 22px;vertical-align: text-top;line-height:24px;font-size:14px}
 /* mainbox 结束 */
 
 /* footbox 开始 */
 .footbox{width:1000px;margin:0px auto;height:146px;background:url(../images/bg_footbox.jpg) -1px top no-repeat;}
-.footbox dl.partners{float:left;margin-top:30px;margin-left:14px}
-.footbox dl.partners dt span.title{padding-left:20px}
-.footbox dl.partners dd ul li{float:left;width:118px;height:56px;margin-right:4px}
-.footbox dl.partners dd ul li a{width:100%;display:block;}
-.footbox dl.partners dd ul li img{width:118px;height:56px;}
+dl.partners{float:left;margin-top:30px;margin-left:14px}
+dl.partners dt span.title{padding-left:20px}
+dl.partners dd ul li{float:left;width:118px;height:56px;margin-right:4px}
+dl.partners dd ul li a{width:100%;display:block;}
+dl.partners dd ul li img{width:118px;height:56px;}
 
-.footbox ul.footmenu{width:100%;float:left;margin-top:7px}
-.footbox ul.footmenu li{height:28px;line-height:28px;float:left;margin:0px 17px}
-.footbox ul.footmenu li a{width:100%;display:block;font-size:14px;color:#FFF}
+ul.footmenu,ul.footmenu2{width:100%;float:left;margin-top:7px}
+ul.footmenu li,ul.footmenu2 li{height:28px;line-height:28px;float:left;margin:0px 17px}
+ul.footmenu li a,ul.footmenu2 li a{width:100%;display:block;font-size:14px;color:#FFF}
+
+ul.footmenu2{width:100%;height:30px;background:url(../images/bg_foot_menu.jpg) left top repeat-x;}
 /* footbox 结束 */
